@@ -15,7 +15,7 @@ def transform_waf_status(input_path: str, output_path: str) -> None:
 
 
 if __name__ == "__main__":
-    input_path = "raw_data.xlsx"
+    input_path = "filtered_data.xlsx"
     output_path = "my_data.xlsx"
     transform_waf_status(input_path, output_path)
     print("Data transformation completed!")
