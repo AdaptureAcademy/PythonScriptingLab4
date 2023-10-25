@@ -1,16 +1,21 @@
-# This is a sample Python script.
-
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+import pandas as pd
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+def transform_waf_status(input_path: str, output_path: str) -> None:
+    df = pd.read_excel(input_path)
+
+    # Define aggregation functions for each column
+    agg_funcs = {
+        # ... [continue with your provided agg_funcs dictionary]
+    }
+
+    # Group by 'Account Name' and apply aggregation
+
+    # Save the transformed data
 
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+if __name__ == "__main__":
+    input_path = "raw_data.xlsx"
+    output_path = "my_data.xlsx"
+    transform_waf_status(input_path, output_path)
+    print("Data transformation completed!")
