@@ -16,17 +16,8 @@ openpyxl
 
 ### Implementation Steps:
 
-#### 1. Data Loading
-Define a function `load_data` that reads an Excel file and returns a Pandas DataFrame:
-```python
-import pandas as pd
-
-def load_data(file_path):
-    return pd.read_excel(file_path)
-```
-
-#### 2. Data Transformation
-Now, define a function `transform_waf_status` to process the loaded data:
+#### 1. Data Transformation
+Define a function `transform_waf_status` to process the loaded data:
 ```python
 def transform_waf_status(input_path, output_path):
     df = pd.read_excel(input_path)
@@ -38,7 +29,7 @@ def transform_waf_status(input_path, output_path):
     # Save the transformed data
 ```
 
-#### 3. Execute the Data Transformation
+#### 2. Execute the Data Transformation
 In your `main.py`:
 ```python
 if __name__ == "__main__":
